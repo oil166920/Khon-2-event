@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>โขนโรงใน | หนังสือดิจิทัล</title>
+  <title>โขนโรงใน | Digital Presentation</title>
+
+  <meta name="theme-color" content="#080808">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,67 +18,133 @@
 
 <body>
 
-<!-- =========================
+<!-- =========================================
+     BACKGROUND
+========================================= -->
+
+<div class="bg">
+
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
+
+  <div class="pattern"></div>
+
+</div>
+
+
+<!-- =========================================
      TOP BAR
-========================= -->
+========================================= -->
 
 <header class="topbar">
 
   <div class="brand">
-    <div class="brand-symbol">❖</div>
 
-    <div>
-      <strong>โขนโรงใน</strong>
-      <small>THAI CLASSICAL PERFORMANCE</small>
+    <div class="brand-logo">
+      ❖
     </div>
+
+    <div class="brand-text">
+
+      <strong>
+        โขนโรงใน
+      </strong>
+
+      <small>
+        THAI CLASSICAL PERFORMANCE
+      </small>
+
+    </div>
+
   </div>
 
-  <div class="page-counter">
-    <span id="currentPage">01</span>
-    <span class="slash">/</span>
-    <span id="totalPage">14</span>
+
+  <div class="top-actions">
+
+    <button
+      class="top-button"
+      id="soundBtn"
+      title="เสียง">
+      🔇
+    </button>
+
+    <button
+      class="top-button"
+      id="fullscreenBtn"
+      title="เต็มจอ">
+      ⛶
+    </button>
+
+    <div class="page-number">
+
+      <span id="currentPage">
+        01
+      </span>
+
+      <span class="page-slash">
+        /
+      </span>
+
+      <span id="totalPage">
+        15
+      </span>
+
+    </div>
+
   </div>
 
 </header>
 
 
-<!-- =========================
-     BOOK AREA
-========================= -->
+<!-- =========================================
+     MAIN BOOK
+========================================= -->
 
-<main class="book-stage">
+<main class="presentation">
 
-  <div class="book-shadow"></div>
+  <div class="book">
 
-  <div class="book" id="book">
+    <!-- =====================================
+         PAGE 01 COVER
+    ====================================== -->
 
-    <!-- =====================
-         COVER
-    ====================== -->
+    <article class="page active">
 
-    <section class="page active">
+      <div class="page-content cover">
 
-      <div class="page-inner cover">
+        <div class="cover-decoration">
 
-        <div class="cover-pattern"></div>
+          <div class="corner tl"></div>
+          <div class="corner tr"></div>
+          <div class="corner bl"></div>
+          <div class="corner br"></div>
 
-        <div class="cover-content">
+        </div>
 
-          <div class="royal-symbol">❖</div>
 
-          <div class="mini-title">
+        <div class="cover-center">
+
+          <div class="royal-mark">
+            ❖
+          </div>
+
+          <div class="eyebrow">
             THAI CLASSICAL PERFORMANCE
           </div>
 
           <h1>
-            โขน<br>
+            โขน
             <span>โรงใน</span>
           </h1>
 
-          <div class="gold-line">
-            <span></span>
-            ✦
-            <span></span>
+          <div class="gold-divider">
+
+            <i></i>
+
+            <b>✦</b>
+
+            <i></i>
+
           </div>
 
           <h2>
@@ -87,80 +155,127 @@
             หนังสือดิจิทัลประกอบการนำเสนอ
           </p>
 
-          <button class="start-button" onclick="nextPage()">
-            เปิดหนังสือ
-            <span>→</span>
+          <button
+            class="open-book"
+            onclick="nextPage()">
+
+            <span>
+              เปิดหนังสือ
+            </span>
+
+            <b>
+              →
+            </b>
+
           </button>
 
         </div>
 
-        <div class="cover-bottom">
-          งานนำเสนอวิชานาฏศิลป์ไทย
+
+        <div class="cover-footer">
+
+          <span>
+            NATTDEV DIGITAL PRESENTATION
+          </span>
+
+          <span>
+            2026
+          </span>
+
         </div>
 
       </div>
 
-    </section>
+    </article>
 
 
-    <!-- =====================
-         PAGE 2
-    ====================== -->
+    <!-- =====================================
+         PAGE 02
+    ====================================== -->
 
-    <section class="page">
+    <article class="page">
 
-      <div class="page-inner">
+      <div class="page-content">
 
         <div class="chapter">
-          <span>CHAPTER 01</span>
-          <strong>ความหมาย</strong>
+
+          <span>
+            CHAPTER 01
+          </span>
+
+          <b>
+            บทนำ
+          </b>
+
         </div>
 
-        <h2 class="page-title">
-          โขนคืออะไร?
+        <h2 class="title">
+          ทำความรู้จักกับโขน
         </h2>
 
-        <div class="ornament">✦</div>
+        <div class="ornament">
+          ✦
+        </div>
 
-        <div class="two-column">
+
+        <div class="intro-grid">
 
           <div>
 
-            <p class="lead">
-              โขนเป็นนาฏศิลป์การแสดงชั้นสูงของไทย
-              ที่มีเอกลักษณ์เฉพาะตัวและได้รับการสืบทอด
-              มาอย่างยาวนาน
+            <p class="large-text">
+              โขนเป็นนาฏศิลป์การแสดงชั้นสูง
+              ที่มีความโดดเด่นและเป็นเอกลักษณ์
+              ของศิลปวัฒนธรรมไทย
             </p>
 
             <p>
-              การแสดงโขนเป็นศิลปะที่ผสมผสานหลายแขนง
-              เข้าด้วยกัน ได้แก่ การร่ายรำ ดนตรีไทย
-              การพากย์ การเจรจา เครื่องแต่งกาย
-              และงานช่างหัวโขน
+              โขนเป็นศิลปะที่รวมศาสตร์หลายแขนง
+              เข้าไว้ด้วยกัน ทั้งการร่ายรำ
+              ดนตรีไทย การพากย์ การเจรจา
+              เครื่องแต่งกาย และงานช่างหัวโขน
             </p>
 
             <p>
-              เรื่องที่นำมาแสดงส่วนใหญ่มาจาก
+              เนื้อเรื่องที่นำมาแสดงส่วนใหญ่
+              มีพื้นฐานจากวรรณคดีเรื่อง
               <strong>รามเกียรติ์</strong>
-              ซึ่งเป็นวรรณคดีสำคัญของไทย
             </p>
 
           </div>
 
-          <div class="gold-card">
 
-            <div class="card-icon">🎭</div>
+          <div class="info-card">
+
+            <div class="card-symbol">
+              🎭
+            </div>
 
             <h3>
-              จุดเด่นของโขน
+              องค์ประกอบสำคัญ
             </h3>
 
             <ul>
-              <li>ท่ารำที่เป็นแบบแผน</li>
-              <li>หัวโขนที่งดงาม</li>
-              <li>เครื่องแต่งกายประณีต</li>
-              <li>การพากย์และเจรจา</li>
-              <li>ดนตรีปี่พาทย์</li>
+
+              <li>
+                ท่ารำและกระบวนรำ
+              </li>
+
+              <li>
+                หัวโขน
+              </li>
+
+              <li>
+                เครื่องแต่งกาย
+              </li>
+
+              <li>
+                ดนตรีปี่พาทย์
+              </li>
+
+              <li>
+                การพากย์และเจรจา
+              </li>
+
             </ul>
 
           </div>
@@ -169,97 +284,129 @@
 
       </div>
 
-    </section>
+    </article>
 
 
-    <!-- =====================
-         PAGE 3
-    ====================== -->
+    <!-- =====================================
+         PAGE 03
+    ====================================== -->
 
-    <section class="page">
+    <article class="page">
 
-      <div class="page-inner">
+      <div class="page-content">
 
         <div class="chapter">
-          <span>CHAPTER 02</span>
-          <strong>ประวัติ</strong>
+
+          <span>
+            CHAPTER 02
+          </span>
+
+          <b>
+            ประวัติ
+          </b>
+
         </div>
 
-        <h2 class="page-title">
+        <h2 class="title">
           ประวัติและพัฒนาการของโขน
         </h2>
 
+        <div class="ornament">
+          ✦
+        </div>
+
+
         <div class="timeline">
 
-          <div class="timeline-item">
+          <div class="timeline-row">
 
             <div class="timeline-number">
               01
             </div>
 
             <div>
-              <h3>รากฐานของนาฏศิลป์ไทย</h3>
+
+              <h3>
+                จุดกำเนิด
+              </h3>
 
               <p>
-                โขนมีพัฒนาการจากศิลปะการแสดงหลายรูปแบบ
-                และมีความสัมพันธ์กับการรำ การเต้น
-                การพากย์ และดนตรีไทย
+                โขนมีพัฒนาการจากศิลปะการแสดง
+                หลายรูปแบบของไทย และมีความสัมพันธ์
+                กับการเต้น การรำ การพากย์
+                และดนตรี
               </p>
+
             </div>
 
           </div>
 
 
-          <div class="timeline-item">
+          <div class="timeline-row">
 
             <div class="timeline-number">
               02
             </div>
 
             <div>
-              <h3>การแสดงในราชสำนัก</h3>
+
+              <h3>
+                ราชสำนัก
+              </h3>
 
               <p>
-                โขนได้รับการส่งเสริมและพัฒนาในราชสำนัก
-                จนเกิดแบบแผนที่มีความประณีต
+                โขนได้รับการส่งเสริมในราชสำนัก
+                จนมีการกำหนดแบบแผน
+                และรูปแบบการแสดงที่ประณีต
               </p>
+
             </div>
 
           </div>
 
 
-          <div class="timeline-item">
+          <div class="timeline-row">
 
             <div class="timeline-number">
               03
             </div>
 
             <div>
-              <h3>เกิดรูปแบบการแสดงต่าง ๆ</h3>
+
+              <h3>
+                การพัฒนา
+              </h3>
 
               <p>
-                ต่อมาเกิดโขนหลายรูปแบบ เช่น
-                โขนกลางแปลง โขนโรงนอก โขนหน้าจอ
-                โขนฉาก และโขนโรงใน
+                เกิดรูปแบบการแสดงหลายประเภท
+                เช่น โขนกลางแปลง โขนโรงนอก
+                โขนหน้าจอ โขนฉาก
+                และโขนโรงใน
               </p>
+
             </div>
 
           </div>
 
 
-          <div class="timeline-item">
+          <div class="timeline-row">
 
             <div class="timeline-number">
               04
             </div>
 
             <div>
-              <h3>การอนุรักษ์ในปัจจุบัน</h3>
+
+              <h3>
+                ปัจจุบัน
+              </h3>
 
               <p>
-                มีการนำโขนเข้าสู่ระบบการศึกษา
-                จัดการแสดง และเผยแพร่ผ่านสื่อสมัยใหม่
+                มีการอนุรักษ์ ถ่ายทอด และเผยแพร่
+                โขนผ่านสถานศึกษา เวทีการแสดง
+                และสื่อดิจิทัล
               </p>
+
             </div>
 
           </div>
@@ -268,27 +415,39 @@
 
       </div>
 
-    </section>
+    </article>
 
 
-    <!-- =====================
-         PAGE 4
-    ====================== -->
+    <!-- =====================================
+         PAGE 04
+    ====================================== -->
 
-    <section class="page">
+    <article class="page">
 
-      <div class="page-inner">
+      <div class="page-content">
 
         <div class="chapter">
-          <span>CHAPTER 03</span>
-          <strong>โขนโรงใน</strong>
+
+          <span>
+            CHAPTER 03
+          </span>
+
+          <b>
+            โขนโรงใน
+          </b>
+
         </div>
 
-        <h2 class="page-title">
+        <h2 class="title">
           โขนโรงในคืออะไร?
         </h2>
 
-        <div class="big-feature">
+        <div class="ornament">
+          ✦
+        </div>
+
+
+        <div class="feature-box">
 
           <div class="feature-icon">
             🏛️
@@ -297,20 +456,22 @@
           <div>
 
             <h3>
-              การผสมผสานของโขนและละครใน
+              การผสมผสานระหว่างโขนกับละครใน
             </h3>
 
             <p>
-              โขนโรงในเป็นรูปแบบการแสดงที่นำลักษณะ
-              ของโขนมาผสมผสานกับแบบแผนของละครใน
+              โขนโรงในเป็นรูปแบบการแสดงที่มี
+              ลักษณะของโขนผสมกับลักษณะของละครใน
               โดยเน้นความประณีตของท่ารำ
-              การดำเนินเรื่อง และองค์ประกอบของการแสดง
+              การดำเนินเรื่อง และองค์ประกอบ
+              ทางนาฏศิลป์
             </p>
 
             <p>
-              การแสดงภายในโรงทำให้สามารถควบคุม
-              บรรยากาศ แสง เสียง ฉาก และรายละเอียด
-              ต่าง ๆ ได้อย่างเหมาะสม
+              การแสดงภายในโรงช่วยให้สามารถ
+              ควบคุมฉาก บรรยากาศ แสง เสียง
+              และรายละเอียดต่าง ๆ
+              ของการแสดงได้อย่างเหมาะสม
             </p>
 
           </div>
@@ -318,695 +479,1314 @@
         </div>
 
 
-        <div class="compare">
+        <div class="compare-grid">
 
           <div>
-            <h3>ลักษณะของโขน</h3>
+
+            <h3>
+              🎭 ลักษณะของโขน
+            </h3>
 
             <p>
-              🎭 มีหัวโขน<br>
-              💃 มีท่ารำ<br>
-              🎙️ มีการพากย์<br>
-              🥁 มีดนตรี
+              • มีหัวโขน<br>
+              • มีท่ารำแบบแผน<br>
+              • มีการพากย์<br>
+              • มีดนตรีประกอบ
             </p>
+
           </div>
 
+
           <div>
-            <h3>ลักษณะของละครใน</h3>
+
+            <h3>
+              💃 ลักษณะของละครใน
+            </h3>
 
             <p>
-              💃 เน้นความประณีต<br>
-              🎼 มีดนตรีประกอบ<br>
-              ✨ ให้ความสำคัญกับความงาม<br>
-              📖 ดำเนินเรื่องอย่างเป็นแบบแผน
+              • เน้นความประณีต<br>
+              • มีดนตรีประกอบ<br>
+              • เน้นความงาม<br>
+              • มีแบบแผนในการแสดง
             </p>
+
           </div>
 
         </div>
 
       </div>
 
-    </section>
+    </article>
 
 
-    <!-- =====================
-         PAGE 5
-    ====================== -->
+    <!-- =====================================
+         PAGE 05
+    ====================================== -->
 
-    <section class="page">
+    <article class="page">
 
-      <div class="page-inner">
+      <div class="page-content">
 
         <div class="chapter">
-          <span>CHAPTER 04</span>
-          <strong>ประเภท</strong>
+
+          <span>
+            CHAPTER 04
+          </span>
+
+          <b>
+            ประเภท
+          </b>
+
         </div>
 
-        <h2 class="page-title">
+        <h2 class="title">
           ประเภทของโขน
         </h2>
 
-        <div class="type-list">
+        <div class="ornament">
+          ✦
+        </div>
 
-          <div class="type-item">
-            <b>01</b>
+
+        <div class="types">
+
+          <div class="type">
+
+            <strong>
+              01
+            </strong>
+
             <div>
-              <h3>โขนกลางแปลง</h3>
+
+              <h3>
+                โขนกลางแปลง
+              </h3>
+
               <p>
                 แสดงกลางแจ้ง เหมาะกับฉากรบ
                 และการเคลื่อนไหวขนาดใหญ่
               </p>
+
             </div>
+
           </div>
 
-          <div class="type-item">
-            <b>02</b>
+
+          <div class="type">
+
+            <strong>
+              02
+            </strong>
+
             <div>
-              <h3>โขนโรงนอก</h3>
+
+              <h3>
+                โขนโรงนอก
+              </h3>
+
               <p>
-                แสดงบนโรงและมีแบบแผนเฉพาะ
+                แสดงบนโรง มีแบบแผน
+                และองค์ประกอบเฉพาะ
               </p>
+
             </div>
+
           </div>
 
-          <div class="type-item active-type">
-            <b>03</b>
+
+          <div class="type selected">
+
+            <strong>
+              03
+            </strong>
+
             <div>
-              <h3>โขนโรงใน</h3>
+
+              <h3>
+                โขนโรงใน
+              </h3>
+
               <p>
-                ผสมผสานลักษณะโขนกับละครใน
-                เน้นความประณีตและความงาม
+                ผสมผสานลักษณะของโขน
+                กับละครใน เน้นความประณีต
               </p>
+
             </div>
+
           </div>
 
-          <div class="type-item">
-            <b>04</b>
+
+          <div class="type">
+
+            <strong>
+              04
+            </strong>
+
             <div>
-              <h3>โขนหน้าจอ</h3>
+
+              <h3>
+                โขนหน้าจอ
+              </h3>
+
               <p>
-                มีจอเป็นองค์ประกอบและสัมพันธ์กับหนังใหญ่
+                ใช้จอเป็นองค์ประกอบ
+                และมีความสัมพันธ์กับหนังใหญ่
               </p>
+
             </div>
+
           </div>
 
-          <div class="type-item">
-            <b>05</b>
+
+          <div class="type">
+
+            <strong>
+              05
+            </strong>
+
             <div>
-              <h3>โขนฉาก</h3>
+
+              <h3>
+                โขนฉาก
+              </h3>
+
               <p>
-                ใช้ฉากเพื่อช่วยสื่อสถานที่และเหตุการณ์
+                ใช้ฉากเพื่อสื่อสถานที่
+                และเหตุการณ์ต่าง ๆ
               </p>
+
             </div>
+
           </div>
 
         </div>
 
       </div>
 
-    </section>
+    </article>
 
 
-    <!-- =====================
-         PAGE 6
-    ====================== -->
+    <!-- =====================================
+         PAGE 06
+    ====================================== -->
 
-    <section class="page">
+    <article class="page">
 
-      <div class="page-inner">
+      <div class="page-content">
 
         <div class="chapter">
-          <span>CHAPTER 05</span>
-          <strong>ตัวละคร</strong>
+
+          <span>
+            CHAPTER 05
+          </span>
+
+          <b>
+            ตัวละคร
+          </b>
+
         </div>
 
-        <h2 class="page-title">
-          ตัวละครสำคัญ
+        <h2 class="title">
+          ตัวละครสำคัญในรามเกียรติ์
         </h2>
+
+        <div class="ornament">
+          ✦
+        </div>
+
 
         <div class="characters">
 
           <div class="character">
-            <div class="character-icon">👑</div>
-            <h3>พระราม</h3>
+
+            <div class="character-icon">
+              👑
+            </div>
+
+            <h3>
+              พระราม
+            </h3>
+
             <p>
-              ตัวเอกของเรื่อง เป็นกษัตริย์
-              ผู้มีคุณธรรมและความกล้าหาญ
+              ตัวเอกของเรื่อง
+              เป็นกษัตริย์ผู้มีคุณธรรม
+              กล้าหาญ และยึดมั่นในความถูกต้อง
             </p>
+
           </div>
 
+
           <div class="character">
-            <div class="character-icon">🏹</div>
-            <h3>พระลักษมณ์</h3>
+
+            <div class="character-icon">
+              🏹
+            </div>
+
+            <h3>
+              พระลักษมณ์
+            </h3>
+
             <p>
               พระอนุชาของพระราม
-              ผู้ซื่อสัตย์และกล้าหาญ
+              มีความซื่อสัตย์
+              และพร้อมช่วยเหลือพระราม
             </p>
+
           </div>
 
+
           <div class="character">
-            <div class="character-icon">👸</div>
-            <h3>นางสีดา</h3>
+
+            <div class="character-icon">
+              👸
+            </div>
+
+            <h3>
+              นางสีดา
+            </h3>
+
             <p>
               ตัวละครสำคัญฝ่ายพระราม
               สื่อถึงความรักและความซื่อสัตย์
             </p>
+
           </div>
 
+
           <div class="character">
-            <div class="character-icon">🐒</div>
-            <h3>หนุมาน</h3>
+
+            <div class="character-icon">
+              🐒
+            </div>
+
+            <h3>
+              หนุมาน
+            </h3>
+
             <p>
-              ทหารเอกฝ่ายพระราม
-              ฉลาด กล้าหาญ และจงรักภักดี
+              ทหารเอกของพระราม
+              ฉลาด กล้าหาญ
+              และจงรักภักดี
             </p>
+
           </div>
 
+
           <div class="character">
-            <div class="character-icon">👹</div>
-            <h3>ทศกัณฐ์</h3>
+
+            <div class="character-icon">
+              👹
+            </div>
+
+            <h3>
+              ทศกัณฐ์
+            </h3>
+
             <p>
               กษัตริย์แห่งกรุงลงกา
               เป็นฝ่ายตรงข้ามของพระราม
             </p>
+
           </div>
 
+
           <div class="character">
-            <div class="character-icon">🧙</div>
-            <h3>พิเภก</h3>
+
+            <div class="character-icon">
+              🧙
+            </div>
+
+            <h3>
+              พิเภก
+            </h3>
+
             <p>
               ผู้มีความรู้และปัญญา
               ยึดถือความถูกต้อง
             </p>
+
           </div>
 
         </div>
 
       </div>
 
-    </section>
+    </article>
 
 
-    <!-- =====================
-         PAGE 7
-    ====================== -->
+    <!-- =====================================
+         PAGE 07
+    ====================================== -->
 
-    <section class="page">
+    <article class="page">
 
-      <div class="page-inner">
+      <div class="page-content">
 
         <div class="chapter">
-          <span>CHAPTER 06</span>
-          <strong>เครื่องแต่งกาย</strong>
+
+          <span>
+            CHAPTER 06
+          </span>
+
+          <b>
+            เครื่องแต่งกาย
+          </b>
+
         </div>
 
-        <h2 class="page-title">
+        <h2 class="title">
           เครื่องแต่งกายและหัวโขน
         </h2>
 
-        <p class="lead">
+        <div class="ornament">
+          ✦
+        </div>
+
+
+        <p class="large-text">
           เครื่องแต่งกายเป็นองค์ประกอบสำคัญ
-          ที่ช่วยบอกฐานะ บุคลิก และบทบาทของตัวละคร
+          ที่ช่วยบอกฐานะ บุคลิก
+          และบทบาทของตัวละคร
         </p>
 
-        <div class="costumes">
+
+        <div class="costume-grid">
 
           <div>
-            <span>👑</span>
-            <h3>ศิราภรณ์</h3>
+
+            <span>
+              👑
+            </span>
+
+            <h3>
+              ศิราภรณ์
+            </h3>
+
             <p>
               เครื่องประดับศีรษะ
-              ที่แสดงฐานะของตัวละคร
+              ที่ช่วยแสดงฐานะ
+              และความสำคัญของตัวละคร
             </p>
+
           </div>
 
+
           <div>
-            <span>🎭</span>
-            <h3>หัวโขน</h3>
+
+            <span>
+              🎭
+            </span>
+
+            <h3>
+              หัวโขน
+            </h3>
+
             <p>
               แสดงเอกลักษณ์ของตัวละคร
-              โดยเฉพาะยักษ์และวานร
+              โดยเฉพาะตัวละครฝ่ายยักษ์
+              และวานร
             </p>
+
           </div>
 
-          <div>
-            <span>✨</span>
-            <h3>เครื่องประดับ</h3>
-            <p>
-              เพิ่มความงดงามและความสง่างาม
-            </p>
-          </div>
 
           <div>
-            <span>🥻</span>
-            <h3>เครื่องแต่งกาย</h3>
+
+            <span>
+              ✨
+            </span>
+
+            <h3>
+              เครื่องประดับ
+            </h3>
+
             <p>
-              ใช้ตามแบบแผนและบทบาทของตัวละคร
+              ช่วยเพิ่มความงดงาม
+              และความสง่างามให้กับผู้แสดง
             </p>
+
+          </div>
+
+
+          <div>
+
+            <span>
+              🥻
+            </span>
+
+            <h3>
+              เครื่องแต่งกาย
+            </h3>
+
+            <p>
+              ใช้ตามแบบแผน
+              และบทบาทของตัวละคร
+            </p>
+
           </div>
 
         </div>
 
       </div>
 
-    </section>
+    </article>
 
 
-    <!-- =====================
-         PAGE 8
-    ====================== -->
+    <!-- =====================================
+         PAGE 08
+    ====================================== -->
 
-    <section class="page">
+    <article class="page">
 
-      <div class="page-inner">
+      <div class="page-content">
 
         <div class="chapter">
-          <span>CHAPTER 07</span>
-          <strong>ดนตรี</strong>
+
+          <span>
+            CHAPTER 07
+          </span>
+
+          <b>
+            ดนตรี
+          </b>
+
         </div>
 
-        <h2 class="page-title">
+        <h2 class="title">
           ดนตรี การพากย์ และการรำ
         </h2>
 
-        <div class="music">
+        <div class="ornament">
+          ✦
+        </div>
+
+
+        <div class="music-grid">
 
           <div>
-            <span>🥁</span>
-            <h3>วงปี่พาทย์</h3>
+
+            <span>
+              🥁
+            </span>
+
+            <h3>
+              วงปี่พาทย์
+            </h3>
+
             <p>
               ใช้บรรเลงประกอบการแสดง
               และสร้างอารมณ์ให้กับเหตุการณ์
             </p>
+
           </div>
 
-          <div>
-            <span>🎙️</span>
-            <h3>การพากย์</h3>
-            <p>
-              ถ่ายทอดคำพูดและเรื่องราว
-              ของตัวละคร
-            </p>
-          </div>
 
           <div>
-            <span>💬</span>
-            <h3>การเจรจา</h3>
+
+            <span>
+              🎙️
+            </span>
+
+            <h3>
+              การพากย์
+            </h3>
+
             <p>
-              ใช้ในบทสนทนาและเหตุการณ์สำคัญ
+              ถ่ายทอดคำพูด
+              และเรื่องราวของตัวละคร
             </p>
+
           </div>
 
+
           <div>
-            <span>💃</span>
-            <h3>กระบวนท่ารำ</h3>
+
+            <span>
+              💬
+            </span>
+
+            <h3>
+              การเจรจา
+            </h3>
+
             <p>
-              ใช้ร่างกายสื่ออารมณ์ บุคลิก
-              และการกระทำ
+              ใช้ในการสนทนา
+              และเหตุการณ์สำคัญ
             </p>
+
           </div>
+
+
+          <div>
+
+            <span>
+              💃
+            </span>
+
+            <h3>
+              กระบวนท่ารำ
+            </h3>
+
+            <p>
+              ใช้ร่างกายสื่ออารมณ์
+              บุคลิก และการกระทำ
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="highlight">
+
+          <b>
+            จุดสำคัญ
+          </b>
+
+          <p>
+            การแสดงโขนไม่ได้เกิดจากผู้แสดงเพียงฝ่ายเดียว
+            แต่ต้องอาศัยการทำงานร่วมกันของผู้แสดง
+            นักดนตรี ผู้พากย์ ผู้เจรจา และฝ่ายต่าง ๆ
+          </p>
 
         </div>
 
       </div>
 
-    </section>
+    </article>
 
 
-    <!-- =====================
-         PAGE 9
-    ====================== -->
+    <!-- =====================================
+         PAGE 09
+    ====================================== -->
 
-    <section class="page">
+    <article class="page">
 
-      <div class="page-inner">
+      <div class="page-content">
 
         <div class="chapter">
-          <span>CHAPTER 08</span>
-          <strong>รามเกียรติ์</strong>
+
+          <span>
+            CHAPTER 08
+          </span>
+
+          <b>
+            รามเกียรติ์
+          </b>
+
         </div>
 
-        <h2 class="page-title">
+        <h2 class="title">
           รามเกียรติ์กับโขน
         </h2>
 
-        <div class="ramakien">
+        <div class="ornament">
+          ✦
+        </div>
 
-          <div class="book-icon">
+
+        <div class="story-box">
+
+          <div class="story-icon">
             📖
           </div>
 
           <div>
 
-            <h3>วรรณคดีสำคัญของไทย</h3>
+            <h3>
+              วรรณคดีสำคัญของไทย
+            </h3>
 
             <p>
-              รามเกียรติ์เป็นวรรณคดีสำคัญของไทย
-              มีเรื่องราวเกี่ยวกับพระราม
-              การต่อสู้กับทศกัณฐ์
-              และเหตุการณ์ระหว่างมนุษย์ ยักษ์ และวานร
+              รามเกียรติ์เป็นวรรณคดีสำคัญ
+              ที่มีเรื่องราวเกี่ยวกับพระราม
+              นางสีดา พระลักษมณ์ หนุมาน
+              ทศกัณฐ์ และตัวละครอีกมากมาย
             </p>
 
             <p>
-              เนื้อเรื่องยังสอดแทรกข้อคิดเรื่อง
-              ความซื่อสัตย์ ความรับผิดชอบ
-              ความกตัญญู และการยืนหยัดในความถูกต้อง
+              เรื่องราวสะท้อนแนวคิดเกี่ยวกับ
+              ความดี ความซื่อสัตย์ ความรับผิดชอบ
+              ความกตัญญู และการยืนหยัด
+              ในความถูกต้อง
             </p>
 
           </div>
 
         </div>
 
-        <div class="story-line">
+
+        <div class="story-flow">
 
           <div>
-            <b>01</b>
-            <span>พระรามออกเดินทาง</span>
+
+            <b>
+              01
+            </b>
+
+            <span>
+              พระรามออกเดินทาง
+            </span>
+
           </div>
 
           <div>
-            <b>02</b>
-            <span>นางสีดาถูกลักพาตัว</span>
+
+            <b>
+              02
+            </b>
+
+            <span>
+              นางสีดาถูกลักพาตัว
+            </span>
+
           </div>
 
           <div>
-            <b>03</b>
-            <span>กองทัพวานร</span>
+
+            <b>
+              03
+            </b>
+
+            <span>
+              กองทัพวานร
+            </span>
+
           </div>
 
           <div>
-            <b>04</b>
-            <span>สงครามลงกา</span>
+
+            <b>
+              04
+            </b>
+
+            <span>
+              สงครามลงกา
+            </span>
+
           </div>
 
         </div>
 
       </div>
 
-    </section>
+    </article>
 
 
-    <!-- =====================
+    <!-- =====================================
          PAGE 10
-    ====================== -->
+    ====================================== -->
 
-    <section class="page">
+    <article class="page">
 
-      <div class="page-inner">
+      <div class="page-content">
 
         <div class="chapter">
-          <span>CHAPTER 09</span>
-          <strong>ขั้นตอน</strong>
+
+          <span>
+            CHAPTER 09
+          </span>
+
+          <b>
+            ขั้นตอน
+          </b>
+
         </div>
 
-        <h2 class="page-title">
-          ขั้นตอนการแสดง
+        <h2 class="title">
+          ขั้นตอนการจัดการแสดง
         </h2>
+
+        <div class="ornament">
+          ✦
+        </div>
+
 
         <div class="steps">
 
           <div>
-            <b>01</b>
-            <h3>เตรียมเรื่อง</h3>
+
+            <b>
+              01
+            </b>
+
+            <h3>
+              เลือกเรื่อง
+            </h3>
+
             <p>
-              กำหนดตอนและลำดับเหตุการณ์
+              กำหนดตอน
+              และลำดับเหตุการณ์
             </p>
+
           </div>
 
-          <div>
-            <b>02</b>
-            <h3>เตรียมผู้แสดง</h3>
-            <p>
-              ฝึกท่ารำ บุคลิก และการเคลื่อนไหว
-            </p>
-          </div>
 
           <div>
-            <b>03</b>
-            <h3>เตรียมเครื่องแต่งกาย</h3>
+
+            <b>
+              02
+            </b>
+
+            <h3>
+              เตรียมผู้แสดง
+            </h3>
+
             <p>
-              จัดหัวโขน เครื่องแต่งกาย
+              ฝึกท่ารำ บุคลิก
+              และการเคลื่อนไหว
+            </p>
+
+          </div>
+
+
+          <div>
+
+            <b>
+              03
+            </b>
+
+            <h3>
+              เตรียมเครื่องแต่งกาย
+            </h3>
+
+            <p>
+              จัดหัวโขน
+              เครื่องแต่งกาย
               และเครื่องประดับ
             </p>
+
           </div>
 
+
           <div>
-            <b>04</b>
-            <h3>ซ้อม</h3>
+
+            <b>
+              04
+            </b>
+
+            <h3>
+              ซ้อม
+            </h3>
+
             <p>
-              ประสานผู้แสดง นักดนตรี
-              และนักพากย์
+              ประสานผู้แสดง
+              นักดนตรี และนักพากย์
             </p>
+
           </div>
 
+
           <div>
-            <b>05</b>
-            <h3>แสดงจริง</h3>
+
+            <b>
+              05
+            </b>
+
+            <h3>
+              แสดงจริง
+            </h3>
+
             <p>
               ทุกฝ่ายทำงานร่วมกัน
               เพื่อให้การแสดงสมบูรณ์
             </p>
+
           </div>
+
+        </div>
+
+
+        <div class="process-line">
+
+          <span></span>
+
+          <b>
+            STORY
+          </b>
+
+          <span></span>
+
+          <b>
+            REHEARSAL
+          </b>
+
+          <span></span>
+
+          <b>
+            PERFORMANCE
+          </b>
+
+          <span></span>
 
         </div>
 
       </div>
 
-    </section>
+    </article>
 
 
-    <!-- =====================
+    <!-- =====================================
          PAGE 11
-    ====================== -->
+    ====================================== -->
 
-    <section class="page">
+    <article class="page">
 
-      <div class="page-inner">
+      <div class="page-content">
 
         <div class="chapter">
-          <span>CHAPTER 10</span>
-          <strong>คุณค่า</strong>
+
+          <span>
+            CHAPTER 10
+          </span>
+
+          <b>
+            คุณค่า
+          </b>
+
         </div>
 
-        <h2 class="page-title">
+        <h2 class="title">
           คุณค่าของโขนโรงใน
         </h2>
+
+        <div class="ornament">
+          ✦
+        </div>
+
 
         <div class="values">
 
           <div>
-            <span>🇹🇭</span>
-            <h3>คุณค่าทางวัฒนธรรม</h3>
+
+            <span>
+              🇹🇭
+            </span>
+
+            <h3>
+              คุณค่าทางวัฒนธรรม
+            </h3>
+
             <p>
               เป็นมรดกทางศิลปวัฒนธรรม
-              ที่สะท้อนเอกลักษณ์ของไทย
+              ที่สะท้อนเอกลักษณ์
+              และภูมิปัญญาของไทย
             </p>
+
           </div>
 
+
           <div>
-            <span>🎨</span>
-            <h3>คุณค่าทางศิลปะ</h3>
+
+            <span>
+              🎨
+            </span>
+
+            <h3>
+              คุณค่าทางศิลปะ
+            </h3>
+
             <p>
-              รวมศิลปะการรำ ดนตรี งานช่าง
-              เครื่องแต่งกาย และการละคร
+              รวมการรำ ดนตรี งานช่าง
+              เครื่องแต่งกาย
+              และการละคร
             </p>
+
           </div>
 
+
           <div>
-            <span>📚</span>
-            <h3>คุณค่าทางการศึกษา</h3>
+
+            <span>
+              📚
+            </span>
+
+            <h3>
+              คุณค่าทางการศึกษา
+            </h3>
+
             <p>
-              ช่วยเรียนรู้วรรณคดี ประวัติศาสตร์
-              ภาษา และภูมิปัญญา
+              ช่วยเรียนรู้วรรณคดี
+              ภาษา ประวัติศาสตร์
+              และภูมิปัญญา
             </p>
+
           </div>
 
+
           <div>
-            <span>❤️</span>
-            <h3>คุณค่าด้านคุณธรรม</h3>
+
+            <span>
+              ❤️
+            </span>
+
+            <h3>
+              คุณค่าด้านคุณธรรม
+            </h3>
+
             <p>
               สอดแทรกเรื่องความดี
-              ความซื่อสัตย์ และความรับผิดชอบ
+              ความซื่อสัตย์
+              และความรับผิดชอบ
             </p>
+
           </div>
 
         </div>
 
       </div>
 
-    </section>
+    </article>
 
 
-    <!-- =====================
+    <!-- =====================================
          PAGE 12
-    ====================== -->
+    ====================================== -->
 
-    <section class="page">
+    <article class="page">
 
-      <div class="page-inner">
+      <div class="page-content">
 
         <div class="chapter">
-          <span>CHAPTER 11</span>
-          <strong>การอนุรักษ์</strong>
+
+          <span>
+            CHAPTER 11
+          </span>
+
+          <b>
+            การอนุรักษ์
+          </b>
+
         </div>
 
-        <h2 class="page-title">
+        <h2 class="title">
           การอนุรักษ์และสืบสาน
         </h2>
 
-        <p class="lead">
-          การอนุรักษ์โขนไม่ใช่เพียงการเก็บรักษา
-          แต่คือการทำให้คนรุ่นใหม่ได้รู้จัก
-          เข้าใจ และเห็นคุณค่า
+        <div class="ornament">
+          ✦
+        </div>
+
+
+        <p class="large-text">
+          การอนุรักษ์โขนไม่ได้หมายถึง
+          การเก็บรักษาเพียงอย่างเดียว
+          แต่คือการทำให้คนรุ่นใหม่
+          ได้เรียนรู้ เข้าใจ และเห็นคุณค่า
         </p>
 
-        <div class="conserve">
+
+        <div class="conservation">
 
           <div>
             <b>01</b>
             <h3>เรียนรู้</h3>
-            <p>ศึกษาประวัติและองค์ประกอบของโขน</p>
+            <p>ศึกษาประวัติและองค์ประกอบ</p>
           </div>
 
           <div>
             <b>02</b>
             <h3>ฝึกปฏิบัติ</h3>
-            <p>เรียนรู้ท่ารำ ดนตรี และศิลปะที่เกี่ยวข้อง</p>
+            <p>เรียนรู้ท่ารำและศิลปะ</p>
           </div>
 
           <div>
             <b>03</b>
             <h3>ชมการแสดง</h3>
-            <p>สนับสนุนการแสดงและศิลปินไทย</p>
+            <p>สนับสนุนศิลปินและการแสดง</p>
           </div>
 
           <div>
             <b>04</b>
             <h3>เผยแพร่</h3>
-            <p>นำความรู้ไปแบ่งปันผ่านสื่อที่เหมาะสม</p>
+            <p>แบ่งปันความรู้ผ่านสื่อ</p>
           </div>
 
           <div>
             <b>05</b>
             <h3>สืบสาน</h3>
-            <p>ส่งต่อความรู้ให้คนรุ่นต่อไป</p>
+            <p>ส่งต่อความรู้สู่คนรุ่นต่อไป</p>
           </div>
 
           <div>
             <b>06</b>
-            <h3>ใช้เทคโนโลยี</h3>
-            <p>นำสื่อดิจิทัลมาช่วยเผยแพร่ศิลปวัฒนธรรม</p>
+            <h3>เทคโนโลยี</h3>
+            <p>ใช้สื่อดิจิทัลช่วยเผยแพร่</p>
           </div>
 
         </div>
 
       </div>
 
-    </section>
+    </article>
 
 
-    <!-- =====================
+    <!-- =====================================
          PAGE 13
-    ====================== -->
+    ====================================== -->
 
-    <section class="page">
+    <article class="page">
 
-      <div class="page-inner">
+      <div class="page-content">
 
         <div class="chapter">
-          <span>CHAPTER 12</span>
-          <strong>สรุป</strong>
+
+          <span>
+            CHAPTER 12
+          </span>
+
+          <b>
+            ข้อคิด
+          </b>
+
         </div>
 
-        <h2 class="page-title">
-          สรุปความรู้
+        <h2 class="title">
+          สิ่งที่เราได้เรียนรู้
         </h2>
+
+        <div class="ornament">
+          ✦
+        </div>
+
+
+        <div class="lesson">
+
+          <div class="lesson-number">
+            01
+          </div>
+
+          <div>
+
+            <h3>
+              เห็นคุณค่าของศิลปวัฒนธรรม
+            </h3>
+
+            <p>
+              โขนเป็นส่วนหนึ่งของมรดก
+              ทางวัฒนธรรมที่ควรได้รับการอนุรักษ์
+            </p>
+
+          </div>
+
+
+          <div class="lesson-number">
+            02
+          </div>
+
+          <div>
+
+            <h3>
+              เรียนรู้การทำงานร่วมกัน
+            </h3>
+
+            <p>
+              การแสดงหนึ่งชุดต้องอาศัย
+              ความร่วมมือจากหลายฝ่าย
+            </p>
+
+          </div>
+
+
+          <div class="lesson-number">
+            03
+          </div>
+
+          <div>
+
+            <h3>
+              สืบสานด้วยคนรุ่นใหม่
+            </h3>
+
+            <p>
+              คนรุ่นใหม่สามารถนำเทคโนโลยี
+              มาช่วยเผยแพร่ศิลปวัฒนธรรม
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="quote-box">
+
+          “ศิลปวัฒนธรรมจะคงอยู่
+          เมื่อคนรุ่นใหม่ร่วมกันเรียนรู้
+          และสืบสาน”
+
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- =====================================
+         PAGE 14
+    ====================================== -->
+
+    <article class="page">
+
+      <div class="page-content">
+
+        <div class="chapter">
+
+          <span>
+            CHAPTER 13
+          </span>
+
+          <b>
+            สรุป
+          </b>
+
+        </div>
+
+        <h2 class="title">
+          สรุปความรู้ทั้งหมด
+        </h2>
+
+        <div class="ornament">
+          ✦
+        </div>
+
 
         <div class="summary">
 
-          <div class="summary-symbol">
+          <div class="summary-mark">
             ❖
           </div>
 
           <h3>
-            โขนโรงในคือศิลปะที่รวมหลายศาสตร์
+            โขนโรงใน
           </h3>
 
           <p>
-            โขนโรงในเป็นรูปแบบการแสดงที่ผสมผสาน
-            เอกลักษณ์ของโขนกับความประณีตของละครใน
-            มีทั้งท่ารำ การพากย์ การเจรจา ดนตรี
-            เครื่องแต่งกาย และหัวโขน
+            เป็นศิลปะการแสดงที่ผสมผสาน
+            เอกลักษณ์ของโขนเข้ากับ
+            ความประณีตของละครใน
           </p>
 
           <p>
-            การเรียนรู้โขนทำให้เราได้เรียนรู้
-            วรรณคดี ประวัติศาสตร์ ศิลปะ งานช่าง
-            และคุณค่าทางวัฒนธรรมของไทย
+            มีองค์ประกอบสำคัญ ได้แก่
+            การรำ การพากย์ การเจรจา
+            ดนตรี เครื่องแต่งกาย
+            และหัวโขน
           </p>
 
-          <div class="quote">
-            “ศิลปวัฒนธรรมจะคงอยู่ได้
-            เมื่อคนรุ่นใหม่ร่วมกันเรียนรู้และสืบสาน”
-          </div>
+          <p>
+            การเรียนรู้โขนช่วยให้เราเข้าใจ
+            วรรณคดี ศิลปะ ประวัติศาสตร์
+            และคุณค่าของวัฒนธรรมไทย
+          </p>
 
         </div>
 
       </div>
 
-    </section>
+    </article>
 
 
-    <!-- =====================
-         PAGE 14 MEMBERS
-    ====================== -->
+    <!-- =====================================
+         PAGE 15 MEMBERS
+    ====================================== -->
 
-    <section class="page">
+    <article class="page">
 
-      <div class="page-inner last-page">
+      <div class="page-content final-page">
 
         <div class="chapter center">
-          <span>GROUP MEMBERS</span>
-          <strong>สมาชิกกลุ่ม</strong>
+
+          <span>
+            GROUP MEMBERS
+          </span>
+
+          <b>
+            สมาชิกกลุ่ม
+          </b>
+
         </div>
+
+
+        <h2 class="title center-title">
+          ผู้จัดทำ
+        </h2>
+
 
         <div class="members">
 
           <div>
-            <small>MEMBER 01</small>
-            <h3>น.ส.กชพรรณ</h3>
+            <small>
+              MEMBER 01
+            </small>
+
+            <h3>
+              น.ส.กชพรรณ
+            </h3>
           </div>
 
-          <div>
-            <small>MEMBER 02</small>
-            <h3>น.ส.นันทิญา</h3>
-          </div>
 
           <div>
-            <small>MEMBER 03</small>
-            <h3>น.ส.อริสรา</h3>
+            <small>
+              MEMBER 02
+            </small>
+
+            <h3>
+              น.ส.นันทิญา
+            </h3>
           </div>
 
-          <div>
-            <small>MEMBER 04</small>
-            <h3>นายณัฐวัตร</h3>
-          </div>
 
           <div>
-            <small>MEMBER 05</small>
-            <h3>นายเสกสรรณ์</h3>
+            <small>
+              MEMBER 03
+            </small>
+
+            <h3>
+              น.ส.อริสรา
+            </h3>
           </div>
 
+
           <div>
-            <small>MEMBER 06</small>
-            <h3>นายพัชรพล</h3>
+            <small>
+              MEMBER 04
+            </small>
+
+            <h3>
+              นายณัฐวัตร
+            </h3>
+          </div>
+
+
+          <div>
+            <small>
+              MEMBER 05
+            </small>
+
+            <h3>
+              นายเสกสรรณ์
+            </h3>
+          </div>
+
+
+          <div>
+            <small>
+              MEMBER 06
+            </small>
+
+            <h3>
+              นายพัชรพล
+            </h3>
           </div>
 
         </div>
 
+
         <div class="thank-you">
 
-          <div>❖</div>
+          <div>
+            ❖
+          </div>
 
           <h2>
             ขอบคุณครับ / ค่ะ
@@ -1020,36 +1800,69 @@
 
       </div>
 
-    </section>
+    </article>
 
   </div>
 
 </main>
 
 
-<!-- =========================
-     CONTROLS
-========================= -->
+<!-- =========================================
+     BOTTOM CONTROL
+========================================= -->
 
-<div class="controls">
+<nav class="controls">
 
-  <button id="prevBtn" onclick="prevPage()">
-    ←
-    <span>ก่อนหน้า</span>
+  <button
+    class="nav-button"
+    id="prevBtn">
+
+    <span>
+      ←
+    </span>
+
+    <small>
+      ก่อนหน้า
+    </small>
+
   </button>
 
-  <div class="dots" id="dots"></div>
 
-  <button id="nextBtn" onclick="nextPage()">
-    <span>ถัดไป</span>
-    →
+  <div class="progress">
+
+    <div
+      class="progress-bar"
+      id="progressBar">
+    </div>
+
+  </div>
+
+
+  <button
+    class="nav-button"
+    id="nextBtn">
+
+    <small>
+      ถัดไป
+    </small>
+
+    <span>
+      →
+    </span>
+
   </button>
 
-</div>
+</nav>
 
 
-<div class="keyboard-help">
-  ← → ใช้เปลี่ยนหน้า &nbsp; | &nbsp; ESC ออกจากโหมดนำเสนอ
+<div class="hint">
+
+  ← → เปลี่ยนหน้า
+  &nbsp; • &nbsp;
+  ปัดซ้าย/ขวา
+  &nbsp; • &nbsp;
+  ⛶ เต็มจอ
+
 </div>
 
 
